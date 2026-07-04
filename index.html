@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadConnect - Professional Messaging Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h2>LeadConnect Studio 💼</h2>
+            <p>Input leads and generate structured communication payloads effortlessly.</p>
+        </header>
+
+        <div class="workspace-card">
+            
+            <div class="input-group">
+                <label for="lead-numbers">Target Lead Numbers (Comma separated or new line):</label>
+                <textarea id="lead-numbers" placeholder="Enter phone numbers here... e.g., +923157488812, +923001234567"></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="message-content">Custom Communication Text:</label>
+                <textarea id="message-content" placeholder="Type the structured campaign message or notes here..."></textarea>
+            </div>
+
+            <div class="action-panel">
+                <button id="generate-text-btn" class="primary-btn">Generate Text Payload 📄</button>
+                <button id="generate-voice-btn" class="secondary-btn">Prepare Voice Format 🎙️</button>
+            </div>
+        </div>
+
+        <div id="status-window" class="status-box hidden">
+            <h3>System Payload Processed Successfully! ✓</h3>
+            <div id="payload-output" class="output-display"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
